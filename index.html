@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Redesign</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800">
+          <style>
+            body {
+              /* font-family: 'Montserrat'; */
+              font-family: 'Helvetica';
+            }
+          </style>
+</head>
+<body>
+    <div class="main-column">
+        <h1 class="text-center">Responsive Redesign</h1>
+        <h2 class="text-center">I redesigned a website I often visit: the Indian Railways website</h2>
+        <img class= "Original-SS" src="./Railway_Screenshot.png" alt="Screenshot of the Indian Railways Website">
+
+        <div class="Text">
+            <div class="Intro">
+                <h3 class="text-center">Motivation</h3>
+                <h4>
+                    This is a website that I have personally been frustrated using. Given that its used by a large number of people daily to book train tickets (including my friends and family), I thought it would be particularly meaningful to try and redesign this website.
+                    <br>Link:&nbsp;
+                    <a href="https://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html">https://indianrail.gov.in/</a>
+                </h4>
+            </div>
+
+            <div class="Finding-Problems">
+                <h3 class="text-center">Finding Problems</h3>
+                <ul>
+                    <li>Efficiency</li>
+                    <ul>
+                        <li>The moving banners make it hard to efficiently gather information – you have to wait for the entire loop to end before you can have a look at what information you need.</li>
+                        <li>The titles in the navbar are not particularly clear and there is significant overlap between categories (for example, Reserved Train Between Stations vs Reserved Train Schedule). It would be more efficient to group categories together so that users don't end up looking at multiple pages if it's not clear which category has the information they need.</li>
+                    </ul>
+                    <li>Learnability</li>
+                    <ul>
+                        <li> It's difficult to differentiate between what is an advertisement and what's not.</li>
+                        <li> It would be hard to formulate (and remember) a mental model of where to look. The navigation bar has a particular subset of services (perhaps the most common ones), while the Services button actually drops down to an extended list of services (there's nothing indicating that the service button is a drop-down button).</li>
+                    </ul>
+                    <li>Memorability</li>
+                    <ul>
+                        <li> Here too the moving banners would pose a difficulty – the lack of any organization amongst them would make it hard to remember where different pieces of information are.</li>
+                        <li> It also seems like the content of the banners as well as rectangular bars seems to keep changing making it hard to remember.</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="Accessibility">
+                <h3 class="text-center">Accessibility</h3>
+                <ul>
+                    <li>Looking at WebAIM WAVE, the website had several accesibility issues: </li>
+                    <ul>
+                        <li> There were 8 images that did not have alternate text making it hard for users with screen-readers</li>
+                        <li> In 2 cases where there was alternate text, the alt text was either null or missing.</li>
+                        <li> There were also 5 cases where images were linked that did not have alt text.</li>
+                        <li> There was a case of an empty link where a link was present but there was no text indicating what the link was supposed to do.</li>
+                        <li> Lastly, the WAVE software also identified the moving banners (marque elements) as a massive issue for users with screen-readers.</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="Lo-Fi">
+                <h3 class="text-center">Lo-Fidelity Wireframing</h3>    
+            </div>
+            <img class= "Desktop" src="./Desktop.png" alt="Desktop LF Prototype">
+            <div class="Tablet-Phone">
+                <img class= "Tablet" src="./Tablet.png" alt="Tablet LF Prototype">
+                <img class= "Phone" src="./Phone.png" alt="Phone LF Prototype">
+            </div>
+            <img class= "Style-Guide" src="./Style_Guide.png" alt="Style Guide">
+
+            <div class="Hi-Fi">
+                <h3 class="text-center">Hi-Fidelity Prototyping</h3>    
+            </div>
+            <img class= "Desktop" src="./Desktop-HF.png" alt="Desktop HF Prototype">
+            <div class="Tablet-Phone">
+                <img class= "Tablet" src="./Tablet-HF.png" alt="Tablet HF Prototype">
+                <img class= "Phone" src="./Phone-HF.png" alt="Phone HF Prototype">
+            </div>
+        </div>
+
+        <div class="Redesigned">
+            <h3 class="text-center">Redesigned Website!</h3>    
+        </div>
+        <img class= "Desktop-RR RR" src="./Desktop-RR.png" alt="Desktop">
+        <div class="Tablet-Phone">
+            <img class= "Tablet RR" src="./Tablet-RR.png" alt="Tablet">
+            <img class= "Phone RR" src="./Phone-RR.png" alt="Phone">
+        </div>
+        <p class="Final-Link">Link:&nbsp;
+        <a href="https://lazylion351.github.io/responsive-redesign/">https://lazylion351.github.io/responsive-redesign/</a>
+        </p>
+        
+    </div>
+    
+</body>
+</html>
